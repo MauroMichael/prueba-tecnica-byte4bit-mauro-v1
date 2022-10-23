@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.success {
+    background-color: rgb(34, 164, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+    border-radius: 2rem;
+    color: white;
+    height: 600px;
+}
+
+.btnSc {
+    border-radius: 1rem;  
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    width: 30%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.btnSc:hover {
+    background-color: rgb(67, 23, 23);
+}
