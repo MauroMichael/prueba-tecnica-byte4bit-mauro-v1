@@ -8,10 +8,10 @@ export default function cancel({datos}) {
 		emailjs.send("gmail","template_63nbc68",{
 		   to_name: datos.user.name,
 		   from_name: "Byte Store",
-		   message: "Your payment was iterrupted. Please try again.",
+		   message: "Your payment was interrupted. Please try again.",
 		   to_mail: datos.user.email,
 		   }, "QgarNshOFEk1LCngs")
-   }})
+   }},[])
 	return (
 		<div className={styles.cancel}>
 			<h1>There was a problem with your purchase</h1>

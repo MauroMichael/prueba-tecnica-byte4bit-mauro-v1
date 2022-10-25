@@ -10,15 +10,16 @@ export default async function handler(req, res) {
 
     try {
         if(dataUsers.length === 0) {
-            await User.create({
+            const user = await User.create({
                 email,
                 name,
                 nickname,
                 picture
             })
-            res.send('User created')
+            res.json(user)
+        } else {
+            res.json(dataUsers[0])
         }
-        res.send('Welcome to our website')
         
     } catch (error) {
        res.send('Oooops')

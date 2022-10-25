@@ -9,7 +9,7 @@ const models = {
 };
 
 
-//Iterates over each model in the db (Task and User) and invokes its associate function (if it has one)
+//Iterates over each model in the db and invokes its associate function (if it has one)
 Object.keys(models).forEach((modelName) => {
   if (models[modelName].associate) {
     models[modelName].associate(models);

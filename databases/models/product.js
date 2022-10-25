@@ -9,7 +9,7 @@ const initProducts = (sequelize, DataTypes) => {
   Products.init(  {
     name: { type: DataTypes.STRING, allowNull: false },
     price: { type: DataTypes.STRING, allowNull: false },
-    id: { type: DataTypes.UUID, allowNull: false, primaryKey: true },
+    id: { type: DataTypes.UUID, allowNull: false, primaryKey: true, defaultValue: DataTypes.UUIDV4 },
     image: { type: DataTypes.STRING },
     stripePrice: { type: DataTypes.STRING },
 }, {

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg {
+    height: 500px;
+    background-size: cover;
+    background-image: url('/techbg.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 80px 300px;
+}
+
+.btnDt {
+    border-radius: 2rem;
+    height: 50px;
+    background-color: black;
+    margin-top: -5px;
+    color: rgb(151, 148, 148);
+    font-size: 1.1rem;
+}
+

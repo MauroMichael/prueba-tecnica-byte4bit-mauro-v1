@@ -10,7 +10,7 @@ export default async function handler(req, res) {
         let status;
     
         if (order.statusOrder == "Pending") {
-          status = { statusOrder: "Success" };
+          status = { statusOrder: "Succeeded" };
         }
         await order.update(status);
   

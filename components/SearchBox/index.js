@@ -7,7 +7,7 @@ import styles from '../../styles/SearchBar.module.css';
 const AutocompleteItem = ({ id, name, image, price }) => {
 
     return (
-        <li>
+        <li className={styles.li}>
             {name && <Link href={`/product/${id}`}>
                 <div className={styles.item}>
                     <img src={image} alt={name} className={styles.image} />
