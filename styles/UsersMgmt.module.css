@@ -1,0 +1,8 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30%;
+    margin-left: 5%;
+    text-align: right;
+}
+

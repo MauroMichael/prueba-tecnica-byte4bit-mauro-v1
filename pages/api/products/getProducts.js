@@ -14,7 +14,7 @@ export default async function handler(req, res) {
                 },
              })
             if (productByName.length === 0) {
-                return res.status(200).json({ message: 'No hay productos con este nombre' })
+                return res.status(200).json({ message: 'No products with such name' })
             }
             else {
                 res.status(200).json(productByName.slice(0, 10))

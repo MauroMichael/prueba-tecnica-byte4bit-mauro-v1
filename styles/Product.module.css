@@ -56,10 +56,14 @@
     justify-content: space-between;
 }
 .btnAdmDel {
-    background-color: rgb(208, 61, 61);
+    background-color: grey;
     border-radius: 0.4rem;
     border: 0;
     font-size: larger;
+}
+
+.btnAdmDel:hover {
+    background-color: rgb(177, 58, 58);
 }
 
 .editImg{

@@ -38,7 +38,7 @@ export default function Home({ products }) {
 
       <main className={styles.main}>
         <div className={styles.title}>
-          <Link href="http://localhost:3000/">BYTE STORE</Link>
+          <Link href="/">BYTE STORE</Link>
           <SearchBox />
           <div className={styles.log}>
           {roleUser === "admin" ? (
@@ -83,7 +83,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      products,
+      products
     },
   };
 }
