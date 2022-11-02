@@ -1,6 +1,14 @@
+import e from 'express'
 import styles from '../../styles/UsersMgmt.module.css'
 
 export default function UsersMngmt({users}) {
+
+        const  handleRole = () => {
+            let newRole = { email: e.target.value };
+        }
+
+        }
+
     return(
         <div>
             <h1>Users Managment</h1>
@@ -10,7 +18,10 @@ export default function UsersMngmt({users}) {
                     <p>{u.nickname}</p>
                     <p>{u.email}</p>
                     <p>{u.role}</p>
-                    <button>Change profile</button>
+                    <button
+                    onClick = {handleRole}
+                    value = {u.email}
+                    >Change profile</button>
                     </div>
                 ))
             }
